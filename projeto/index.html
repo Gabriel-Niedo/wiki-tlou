@@ -7,9 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/style.css">  
     <title>The Last Of Us</title>
 </head>
 <body>
@@ -21,14 +19,13 @@
 
         <div class="conteudo">
             <div class="informacoes">
-              
                 <p class="descricao">The Last Of Us é um jogo ganhador de diversos prêmios, sendo seu principal, o prêmio de Jogo do Ano em 2022. Com uma história preenchida por carisma e relatando a tragédia de um mundo pós apocalíptico, The Last Of Us conta a história de personagens muito amados e únicos.</p>
             </div>
 
             <div class="botao">
-                <button>Sobre TLOU</button>
-                <button>Personagens</button>
-                <button>Jogar</button>
+                <img class="botoes" onclick="jogar()" src="./src/img/fontes/JOGAR.png" alt="">
+                <img class="botoes" onclick="personagens()" src="./src/img/fontes/PERSONAGENS.png" alt="">
+                <img class="botoes" onclick="sobre()" src="./src/img/fontes/SOBRE.png" alt="">
             </div>
         </div>
 
@@ -38,3 +35,17 @@
     <script src="./src/js/index.js"></script>
 </body>
 </html>
+<script>
+    function sobre() {
+        window.location.href = 'sobre.html'
+    }
+
+    function personagens() {
+        window.location.href = 'personagens.html'
+    }
+
+    function jogar() {
+        window.location.href = 'jogar.html'
+    }
+
+</script>
