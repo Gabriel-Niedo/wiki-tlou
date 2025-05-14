@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/selection.css">
+    <title>The Last Of Us</title>
 </head>
+
 <body>
+  <div class="header">
+    <div class="container">
+      <h1 class="titulo">AquaTech</h1>
+      <ul class="navbar">
+        <li>
+          <a href="index.html">Inicial</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li class="agora">
+          <a href="cadastro.html">Cadastro</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="carrossel">
+            <img class="imagem ativa" src="./src/img/persobg.jpg" alt="Ellie e Joel abraçados">
+        </div>
+
+    <div class="divPai">
+        <div class="opacidade">
+        <div class="personagem">
+            <div onclick="ellie1()" class="icone"><img src="./src/img/sobreviventes tlou 1/tlou 1 ellie.jpeg"alt="Ellie WIlliams (TLOU 1)"></div>
+            <div onclick="joel1()" class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 joel.jpg" alt="Joel Miller"></div>
+            <div onclick="tommy1()" class="icone"><img src="./src/img/sobreviventes tlou 1/tlou 1 tommy.jpg" alt="Tommy Miller"></div>
+            <div onclick="tess1()" class="icone"><img src="./src/img/sobreviventes tlou 1/tlou 1 tess.jpg" alt="Tess Servopoulos"></div>
+            <div onclick="marlene1()" class="icone"><img src="./src/img/sobreviventes tlou 1/tlou 1 marlene.jpg" alt="Marlene"></div>
+            <div onclick="bill1()" class="icone"><img src="./src/img/sobreviventes tlou 1/tlou 1 bill.jpg" alt="Bill"></div>
+            <div onclick="riley1()" class="icone"><img src="./src/img/sobreviventes tlou 1/tlou 1 riley.jpg" alt="Riley"></div>
+        </div>
+        <div class="personagem">
+            <div onclick="ellie2()" class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 ellie.jpg" alt="Ellie"></div>
+            <div onclick="dina2()" class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 dina.jpg" alt="Dina"></div>
+            <div class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 jesse.jpg" alt="Jesse"></div>
+            <div class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 joel.jpg" alt="Joel"></div>
+            <div class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 tommy.jpg" alt="Tommy"></div>
+            <div class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 maria.jpg" alt="Maria"></div>
+            <div class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 abby.jpg" alt="Abby"></div>
+            <div class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 yara.jpg" alt="Yara"></div>
+            <div class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 lev.jpg" alt="Lev"></div>
+            <div class="icone"><img src="./src/img/sobreviventes tlou 2/tlou 2 owen.jpg" alt="Owen"></div>
+        </div>
+        <div class="personagem">
+            <div class="icone"><img src="./src/img/infectados/tlou corredor.png" alt="Corredor"></div>
+            <div class="icone"><img src="./src/img/infectados/tlou stalker.png" alt="Stalker"></div>
+            <div class="icone"><img src="./src/img/infectados/tlou estalador.jpg" alt="Estalador"></div>
+            <div class="icone"><img src="./src/img/infectados/tlou baiacu.jpg" alt="Baiacu"></div>
+            <div class="icone"><img src="./src/img/infectados/tlou tropego.jpg" alt="Trôpego"></div>
+            <div class="icone"><img src="./src/img/infectados/tlou ratking.jpg" alt="Rei dos Ratos"></div>
+        </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div id="myModal" class="modal" style="display: flex;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">X</span>
+            <h2 id="modal-title">Ellie Williams</h2>
+            <p id="modal-text">
     
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>

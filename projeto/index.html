@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/style.css">  
-    <title>The Last Of Us</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/headfoot.css">
+  <title>The Last Of Us</title>
 </head>
+
 <body>
-    <main>
 
-        <div class="carrossel">
-            <img class="imagem ativa" src="./src/img/tloubg.png" alt="Ellie e Joel abraçados">
-        </div>
+  <div class="header">
+    <div class="container">
+      <h1 class="titulo">LastWIKI</h1>
+      <ul class="navbar">
+        <li>
+          <a href="index.html">Inicial</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="login.html">Login</a>
+        </li>
+        <li class="agora">
+          <a href="cadastro.html">Cadastro</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-        <div class="conteudo">
-            <div class="informacoes">
-                <p class="descricao">The Last Of Us é um jogo ganhador de diversos prêmios, sendo seu principal, o prêmio de Jogo do Ano em 2022. Com uma história preenchida por carisma e relatando a tragédia de um mundo pós apocalíptico, The Last Of Us conta a história de personagens muito amados e únicos.</p>
-            </div>
+  <div class="carrossel">
+    <img class="imagem ativa" src="./src/img/tloubg.png" alt="Ellie e Joel abraçados">
+  </div>
 
-            <div class="botao">
-                <img class="botoes" onclick="jogar()" src="./src/img/fontes/JOGAR.png" alt="">
-                <img class="botoes" onclick="personagens()" src="./src/img/fontes/PERSONAGENS.png" alt="">
-                <img class="botoes" onclick="sobre()" src="./src/img/fontes/SOBRE.png" alt="">
-            </div>
-        </div>
+  <div class="conteudo">
+    <div class="informacoes">
+      <p class="descricao">The Last of Us, da desenvolvedora Naughty Dog, é uma obra que conta a história de um
+        contrabandista em um mundo pós apocalíptico onde o fungo Cordyceps evoluiu e utiliza humanos como hospedeiros
+        para se ploriferar. O jogo conquistou diversos títulos e foi nomeado para muitas premiações, sendo 16 apenas em
+        2013 com seu primeiro jogo e em 2020, a sequência The Last Of Us Parte 2 foi vencedora do GOTY (Game of The
+        Year).</p>
+    </div>
 
-       
+    <div class="botao">
+      <img class="botoes" onclick="jogar()" src="./src/img/fontes/JOGAR.png" alt="">
+      <img class="botoes" onclick="personagens()" src="./src/img/fontes/PERSONAGENS.png" alt="">
+      <img class="botoes" onclick="sobre()" src="./src/img/fontes/SOBRE.png" alt="">
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <h4>Feito com amor por aluno &hearts; SPTech &copy; 2023</h4>
+      <span class="version">v1.0.0</span>
+    </div>
+  </div>
 
-    </main>
-    <script src="./src/js/index.js"></script>
+  <script src="./src/js/index.js"></script>
 </body>
+
 </html>
 <script>
-    function sobre() {
-        window.location.href = 'sobre.html'
-    }
+  function sobre() {
+    window.location.href = 'sobre.html'
+  }
 
-    function personagens() {
-        window.location.href = 'personagens.html'
-    }
+  function personagens() {
+    window.location.href = 'personagens.html'
+  }
 
-    function jogar() {
-        window.location.href = 'jogar.html'
-    }
+  function jogar() {
+    window.location.href = 'jogar.html'
+  }
 
 </script>
