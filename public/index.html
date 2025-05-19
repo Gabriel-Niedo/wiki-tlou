@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/headfoot.css">
+  <link rel="icon" href="./assets/icon/icon.png"/>
+  <title>LastWIKI | Menu</title>
+</head>
+
+<body class="index">
+  <div class="carrossel">
+  <div class="imagem ativa">
+    <img src="./assets/imgs/tloubg.png" alt="">
+  </div>
+  </div>
+
+<div class="pai">
+  <div class="header">
+        <div class="container">
+            <h1 class="titulo">LastWIKI</h1>
+            <ul class="navbar">
+                <li class="agora">
+                    <a href="index.html">Inicial</a>
+                </li>
+                <li>
+                    <a href="personagens.html">Personagens</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre TLOU</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+  <div class="conteudo">
+    <div class="informacoes">
+      <p class="descricao">The Last of Us, da desenvolvedora Naughty Dog, é uma obra que conta a história de um
+        contrabandista em um mundo pós apocalíptico onde o fungo Cordyceps evoluiu e utiliza humanos como hospedeiros
+        para se ploriferar. O jogo conquistou diversos títulos e foi nomeado para muitas premiações, sendo 16 apenas em
+        2013 com seu primeiro jogo e em 2020, a sequência The Last Of Us Parte 2 foi vencedora do GOTY (Game of The
+        Year).</p>
+    </div>
+
+    <div class="botao">
+      <img class="botoes" onclick="jogar()" src="./assets/fontes/JOGAR.png" alt="">
+      <img class="botoes" onclick="personagens()" src="./assets/fontes/PERSONAGENS.png" alt="">
+      <img class="botoes" onclick="sobre()" src="./assets/fontes/SOBRE.png" alt="">
+      
+    </div>
+  </div>
+
+  </div>
+    <div class="footer">
+    <div class="container">
+      <h4>Feito por Gabriel Niedo &copy;</h4>
+      <span class="version"><img class="git" onclick="github()" src="./assets/icon/github.png" alt="" width="30px"></span>
+    </div>
+</div>
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
+<script>
+  function sobre() {
+    window.location.href = 'sobre.html'
+  }
+
+  function personagens() {
+    window.location.href = 'personagens.html'
+  }
+
+  function jogar() {
+    window.location.href = 'jogar.html'
+  }
+
+  function github() {
+    window.open('https://github.com/Gabriel-Niedo/wiki-tlou.git', '_blank')
+  }
+</script>

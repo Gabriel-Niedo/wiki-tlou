@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/selection.css">
+    <link rel="stylesheet" href="./css/headfoot.css">
+    <link rel="icon" href="./assets/icon/icon.png"/>
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Personagens</title>
+</head>
+
+<body>
+  <div class="header">
+        <div class="container">
+            <h1 class="titulo">LastWIKI</h1>
+            <ul class="navbar">
+                <li>
+                    <a href="index.html">Inicial</a>
+                </li>
+                <li class="agora">
+                    <a href="personagens.html">Personagens</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre TLOU</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<div class="carrossel">
+            <img class="imagem ativa" src="./assets/imgs/persobg.jpg" alt="Ellie e Joel abraçados">
+        </div>
+
+    <div class="divPai">
+      <div class="opacidade">
+        <div class="personagem">
+          <span class="jogo">THE LAST OF US 1</span>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 1/tlou 1 ellie.jpeg"alt="Ellie WIlliams (TLOU 1)"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 joel.jpg" alt="Joel Miller"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 1/tlou 1 tommy.jpg" alt="Tommy Miller"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 1/tlou 1 tess.jpg" alt="Tess Servopoulos"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 1/tlou 1 marlene.jpg" alt="Marlene"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 1/tlou 1 bill.jpg" alt="Bill"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 1/tlou 1 riley.jpg" alt="Riley"></div>
+        </div>
+        <div class="personagem">
+        <span class="jogo">THE LAST OF US 2</span>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 ellie.jpg" alt="Ellie"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 dina.jpg" alt="Dina"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 jesse.jpg" alt="Jesse"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 joel.jpg" alt="Joel"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 tommy.jpg" alt="Tommy"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 maria.jpg" alt="Maria"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 abby.jpg" alt="Abby"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 yara.jpg" alt="Yara"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 lev.jpg" alt="Lev"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/sobreviventes tlou 2/tlou 2 owen.jpg" alt="Owen"></div>
+        </div>
+        <div class="personagem">
+        <span class="jogo">INFECTADOS</span>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/infectados/tlou corredor.png" alt="Corredor"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/infectados/tlou stalker.png" alt="Stalker"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/infectados/tlou estalador.jpg" alt="Estalador"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/infectados/tlou baiacu.jpg" alt="Baiacu"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/infectados/tlou tropego.jpg" alt="Trôpego"></div>
+            <div id="abrirModal" class="icone"><img src="./assets/perso/infectados/tlou ratking.jpg" alt="Rei dos Ratos"></div>
+        </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+
+    
+</body>
+
+</html>
+
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var abrirModal = document.getElementById("abrirModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+abrirModal.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  }
+</script>

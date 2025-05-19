@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+}
+
+img {
+    height: 75px;
+    width: 75px;
+}
+
+.jogo {
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.divPai {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.icone:hover {
+    transform: scale(1.3);
+    transition: 2s;
+}
+
+
+.personagem {
+  display: inline-grid;
+  grid-template-columns: 75px 75px 75px;
+  height: 400px;
+  place-content: center;;
+  gap: 5px;
+  float: left;
+  padding: 70px;
+  position: relative;
+}
+
+.jogo {
+  top: 80px;
+  left: 130px;
+  position: absolute;
+  color: red;
+}
+
+.personagem .icone {
+  width: 75px;
+  height: 75px  ;
+}
+
+.carrossel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.imagem{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    animation: mudarImagem 0.7s;
+}
+
+
+.imagem.ativa{
+    display: block;
+}
+
+.opacidade {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 200px;
+  width: 1200px;
+  height: 600px;
+  backdrop-filter: blur(5px);
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+}
+
