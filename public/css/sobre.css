@@ -1,0 +1,15 @@
+*body {
+    margin: 0;
+    padding: 0;
+}
+
+.imagem{
+    background-size: cover;
+
+}
+
+.titulo {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}

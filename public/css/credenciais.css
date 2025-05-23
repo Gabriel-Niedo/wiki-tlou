@@ -22,8 +22,9 @@ body {
 }
 
 .header {
-  height: var(--tamanho-header);
-  border-bottom: 2px solid #142814;
+  height: 75px;
+  border-bottom: 2px solid #330c0a;
+  width: 200px;
 }
 
 .header .container {
@@ -34,7 +35,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color: #e3b062;
+  color: white;
 }
 
 .agora {
@@ -42,16 +43,19 @@ body {
 }
 
 .navbar {
-  width: 300px;
+  margin-left: 970px;
+  margin-top: 0px;
+  width: 500px;
+  font-size: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style: none;
   color: #e3b062;
 }
 
 .titulo {
-  color: #32b9cd;
+  color: white;
   width: fit-content;
   font-weight: 500;
 }
@@ -64,7 +68,7 @@ body {
 
 .footer {
   background-color: #142814;
-  height: 65px;
+  height: 70.5px;
   color: #fff;
   display: flex;
   font-size: 15px;
@@ -192,7 +196,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
-  background-color: #ED145B;
+  background-color: #142814;
   width: 120px;
   height: 30px;
   align-self: center;
@@ -227,7 +231,7 @@ body {
   width: 230px;
   position: fixed;
   border-radius: 4px;
-  border: #ED145B 3px solid;
+  border: #142814 3px solid;
   padding: 10px;
   margin-right: 10%;
 }
@@ -263,7 +267,7 @@ input {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #ED145B;
+  background-color: #142814;
   width: 120px;
   align-self: center;
   margin-top: 5px;
@@ -278,5 +282,16 @@ input {
 .loading-div img {
   height: 50px;
   width: 50px;
+}
+
+.opacidadeLogin  {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  height: 300px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
 }
   
